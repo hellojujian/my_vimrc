@@ -60,14 +60,14 @@ hi Label           guifg=#E6DB74               gui=none
 hi Macro           guifg=#C4BE89               gui=italic
 hi SpecialKey      guifg=#66D9EF               gui=italic
 
-hi MatchParen      guifg=#000000 guibg=#08ACE7 gui=bold
+hi MatchParen      guifg=#000000 guibg=#999999 gui=bold
 hi ModeMsg         guifg=#E6DB74
 hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#D5FFFC
 
 " complete menu
-hi Pmenu           guifg=#56FBED guibg=#2E2E2E
-hi PmenuSel        guifg=#FFF700 guibg=#808080
+hi Pmenu           guifg=#C3DC77 guibg=#2E2E2E
+hi PmenuSel        guifg=#F5D565 guibg=#808080
 hi PmenuSbar                     guibg=#080808
 hi PmenuThumb      guifg=#66D9EF
 
@@ -102,7 +102,7 @@ hi Underlined      guifg=#808080               gui=underline
 
 hi VertSplit       guifg=#4D5057 guibg=#4D5057 gui=none
 hi VisualNOS                     guibg=#403D3D
-hi Visual                        guibg=#403D3D
+hi Visual                        guibg=#707070
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
 

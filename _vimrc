@@ -136,7 +136,7 @@ endif
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 set nocompatible                                      "禁用 Vi 兼容模式
-filetype off                                          "禁用文件类型侦测
+"filetype off                                          "禁用文件类型侦测
 
 if !g:iswindows
     set rtp+=~/.vim/bundle/vundle/
@@ -201,7 +201,7 @@ endif
 " -----------------------------------------------------------------------------
 "  < 编写文件时的配置 >
 " -----------------------------------------------------------------------------
-"filetype on                                           "启用文件类型侦测
+filetype on                                           "启用文件类型侦测
 filetype plugin on                                    "针对不同的文件类型加载对应的插件
 filetype plugin indent on                             "启用缩进
 set smartindent                                       "启用智能对齐方式
@@ -212,6 +212,7 @@ set smarttab                                          "指定按一次backspace�
 "set foldenable                                        "启用折叠
 "set foldmethod=indent                                 "indent 折叠方式
 " set foldmethod=marker                                "marker 折叠方式
+syntax on
 
 " 用空格键来开关折叠
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
