@@ -1,19 +1,7 @@
 cd D:\Works
-" => Check PHP Syntax using makeprg
-function! ParsePhpFile()
-	set makeprg=D:\Applications\PHP5.2\php.exe\ -f
-	set shellpipe=> 				
-	set errorformat=<b>%*[^<]</b>:\ \ %m\ in\ <b>%f</b>\ on\ line\ <b>%l</b><br\ />
-	make %
-	copen
-endfunction
 
 "php command
 nmap mr :echo system("D:/Applications/PHP5.2/php.exe ".shellescape(expand('%')))<CR>
-"nmap mr :call ParsePhpFile()<CR>
-nmap mm <C-w>_
-"create new php file with template
-"autocmd BufNewFile *.php 0 r D:/Applications/gVimPortable_7.3/vim73/templates/php.tpl
 
 "python command
 nmap mp :echo system("python.exe ".shellescape(expand('%')))<CR>
@@ -21,6 +9,8 @@ nmap mp :echo system("python.exe ".shellescape(expand('%')))<CR>
 "svn command
 nmap mu :!start TortoiseProc.exe /command:update /path:%:p:h<CR>
 nmap mc :!start TortoiseProc.exe /command:commit /path:%<CR>
+
+nmap mm <C-w>_
 
 " =============================================================================
 "        << 判断操作系统是 Windows 还是 Linux 和判断是终端还是 Gvim >>
@@ -253,7 +243,7 @@ set laststatus=2                                      "启用状态栏信息
 set cmdheight=2                                       "设置命令行的高度为2，默认为1
 set cursorline 										  "突出显示当前行
 "set guifont=YaHei_Consolas_Hybrid:h10                 "设置字体:字号（字体名称空格用下划线代替）
-set guifont=Courier_New:h10.5:cANSI
+set guifont=Courier_New:h11:cANSI
 "set nowrap                                            "设置不自动换行
 set shortmess=atI                                     "去掉欢迎界面
 au GUIEnter * simalt ~x                              "窗口启动时自动最大化
