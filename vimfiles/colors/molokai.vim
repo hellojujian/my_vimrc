@@ -30,8 +30,8 @@ endif
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#6CD305
 hi Number          guifg=#FCFF00
-hi String          guifg=#6CD305
-hi Conditional     guifg=#FCD58D               gui=bold
+hi String          guifg=#89DD54
+hi Conditional     guifg=#45DEF2               gui=italic,bold
 hi Constant        guifg=#AE81FF               gui=bold
 hi Cursor          guifg=#000000 guibg=#F8F8F0
 hi iCursor         guifg=#000000 guibg=#F8F8F0
@@ -51,7 +51,7 @@ hi Float           guifg=#AE81FF
 hi FoldColumn      guifg=#465457 guibg=#000000
 hi Folded          guifg=#465457 guibg=#000000
 hi Function        guifg=#00DEFF
-hi Identifier      guifg=#FD971F
+hi Identifier      guifg=#F9AE44
 hi Ignore          guifg=#808080 guibg=bg
 hi IncSearch       guifg=#C4BE89 guibg=#000000
 
@@ -63,7 +63,7 @@ hi SpecialKey      guifg=#66D9EF               gui=italic
 hi MatchParen      guifg=#000000 guibg=#999999 gui=bold
 hi ModeMsg         guifg=#E6DB74
 hi MoreMsg         guifg=#E6DB74
-hi Operator        guifg=#D5FFFC
+hi Operator        guifg=#f3fadf
 
 " complete menu
 hi Pmenu           guifg=#C3DC77 guibg=#2E2E2E

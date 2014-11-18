@@ -1,10 +1,10 @@
 cd D:\Works
 
 "php command
-nmap mr :echo system("D:/Applications/PHP5.2/php.exe ".shellescape(expand('%')))<CR>
+nmap mr :echo system("php ".shellescape(expand('%')))<CR>
 
 "python command
-nmap mp :echo system("python.exe ".shellescape(expand('%')))<CR>
+nmap mp :echo system("D:/Applications/Python3/python.exe ".shellescape(expand('%')))<CR>
 
 "svn command
 nmap mu :!start TortoiseProc.exe /command:update /path:%:p:h<CR>
@@ -146,13 +146,14 @@ Bundle 'jiangmiao/auto-pairs'
 Bundle 'bufexplorer.zip'
 Bundle 'ccvext.vim'
 Bundle 'vim-scripts/cSyntaxAfter'
-"Bundle 'Yggdroot/indentLine'
+" Bundle 'Yggdroot/indentLine'
 Bundle 'vim-scripts/Mark--Karkat'
 Bundle 'Shougo/neocomplcache'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 " Bundle 'FromtonRouge/OmniCppComplete'
 Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/powerline'
 Bundle 'repeat.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'honza/vim-snippets'
@@ -164,7 +165,7 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'TxtBrowser'
 " Bundle 'winmanager'
 Bundle 'ZoomWin'
-" Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'aperezdc/vim-template'
 
 " -----------------------------------------------------------------------------
@@ -195,12 +196,12 @@ filetype on                                           "启用文件类型侦测
 filetype plugin on                                    "针对不同的文件类型加载对应的插件
 filetype plugin indent on                             "启用缩进
 set smartindent                                       "启用智能对齐方式
-"set expandtab                                         "将Tab键转换为空格
+set expandtab                                         "将Tab键转换为空格
 set tabstop=4                                         "设置Tab键的宽度
 set shiftwidth=4                                      "换行时自动缩进4个空格
 set smarttab                                          "指定按一次backspace就删除shiftwidth宽度的空格
-"set foldenable                                        "启用折叠
-"set foldmethod=indent                                 "indent 折叠方式
+set foldenable                                        "启用折叠
+set foldmethod=indent                                 "indent 折叠方式
 " set foldmethod=marker                                "marker 折叠方式
 syntax on
 
@@ -244,6 +245,7 @@ set cmdheight=2                                       "设置命令行的高度�
 set cursorline 										  "突出显示当前行
 "set guifont=YaHei_Consolas_Hybrid:h10                 "设置字体:字号（字体名称空格用下划线代替）
 set guifont=Courier_New:h11:cANSI
+"set guifont=Inconsolata:h12
 "set nowrap                                            "设置不自动换行
 set shortmess=atI                                     "去掉欢迎界面
 au GUIEnter * simalt ~x                              "窗口启动时自动最大化
@@ -528,9 +530,9 @@ au! BufRead,BufNewFile,BufEnter *.{c,cpp,h,javascript} call CSyntaxAfter()
 
 " 设置终端对齐线颜色
 " let g:indentLine_color_term = 239
-"
+
 " 设置 GUI 对齐线颜色
-" let g:indentLine_color_gui = '#A4E57E'
+"let g:indentLine_color_gui = '#A4E57E'
 
 " -----------------------------------------------------------------------------
 "  < Mark--Karkat（也就是 Mark） 插件配置 >
